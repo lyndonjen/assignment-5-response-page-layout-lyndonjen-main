@@ -1,0 +1,140 @@
+body {
+    background-color: lightgray;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.articles article {
+    background-color: white;
+    padding: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border-top: 2px solid black;
+}
+
+@media (min-width: 1500px) {
+  .fruit-market {
+    background-image: url('../images/fruit-market/fruit-market-1500.webp');
+  }
+  .grapes {
+    background-image: url('../images/grapes/grapes-1500.webp');
+  }
+  .kiwi {
+    background-image: url('../images/kiwi/kiwi-1500.webp');
+  }
+  .strawberries {
+    background-image: url('../images/strawberries/strawberries-1500.webp');
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1499px) {
+  .fruit-market {
+    background-image: url('../images/fruit-market/fruit-market-1250.webp');
+  }
+  .grapes {
+    background-image: url('../images/grapes/grapes-1250.webp');
+  }
+  .kiwi {
+    background-image: url('../images/kiwi/kiwi-1250.webp');
+  }
+  .strawberries {
+    background-image: url('../images/strawberries/strawberries-1250.webp');
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1249px) {
+  .fruit-market {
+    background-image: url('../images/fruit-market/fruit-market-1000.webp');
+  }
+  .grapes {
+    background-image: url('../images/grapes/grapes-1000.webp');
+  }
+  .kiwi {
+    background-image: url('../images/kiwi/kiwi-1000.webp');
+  }
+  .strawberries {
+    background-image: url('../images/strawberries/strawberries-1000.webp');
+  }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+  .fruit-market {
+    background-image: url('../images/fruit-market/fruit-market-800.webp');
+  }
+  .grapes {
+    background-image: url('../images/grapes/grapes-800.webp');
+  }
+  .kiwi {
+    background-image: url('../images/kiwi/kiwi-800.webp');
+  }
+  .strawberries {
+    background-image: url('../images/strawberries/strawberries-800.webp');
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .fruit-market {
+    background-image: url('../images/fruit-market/fruit-market-600.webp');
+  }
+  .grapes {
+    background-image: url('../images/grapes/grapes-600.webp');
+  }
+  .kiwi {
+    background-image: url('../images/kiwi/kiwi-600.webp');
+  }
+  .strawberries {
+    background-image: url('../images/strawberries/strawberries-600.webp');
+  }
+}
+
+@media (max-width: 599px) {
+  .fruit-market {
+    background-image: url('../images/fruit-market/fruit-market-400.webp');
+  }
+  .grapes {
+    background-image: url('../images/grapes/grapes-400.webp');
+  }
+  .kiwi {
+    background-image: url('../images/kiwi/kiwi-400.webp');
+  }
+  .strawberries {
+    background-image: url('../images/strawberries/strawberries-400.webp');
+  }
+}
+
+@media (min-width: 1045px) {
+  .articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .articles article:first-child {
+    grid-column: span 3;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 747px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
