@@ -1,3 +1,4 @@
+/* rules common for narrow and wide screens */
 body {
     background-color: lightgray;
 }
@@ -10,7 +11,7 @@ body {
 }
 
 .articles h2 {
-  text-align: center;
+    text-align: center;
 }
 
 .articles article {
@@ -32,23 +33,26 @@ body {
     border-top: 2px solid black;
 }
 
-@media screen and (min-width: 960px) {
-  .articles {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .articles article:first-child {
-    grid-column: span 3;
-  }
-  .footer {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* rules for narrow screens */
+.articles {
+    grid-template-columns: 1fr;
 }
 
-@media screen and (max-width: 960px) {
-  .articles {
+.footer {
     grid-template-columns: 1fr;
-  }
-  .footer {
-    grid-template-columns: 1fr;
-  }
+}
+
+/* media query for wider screens */
+@media screen and (min-width: 960px) {
+    .articles {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .articles article:first-child {
+        grid-column: span 3;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
